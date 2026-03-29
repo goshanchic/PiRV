@@ -56,6 +56,7 @@ void worker(int id) {
 }
 
 int main() {
+    setlocale(LC_ALL, "Russian");
     for (int i = 0; i < 5; i++) {
         q1.push(i);
         sem1.release();
